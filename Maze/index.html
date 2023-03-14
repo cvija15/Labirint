@@ -10,11 +10,59 @@
 </head>
 <body>
 <h1>Beat the buzzer</h1>
-    <!--<img src="maze.svg">-->
     <div id="playarea">
         <canvas id="canvas" height="650" width="650">
             <script src="js/maze.js"></script>
         </canvas>
     </div>
+	<div id="basket"><img src="images/backboard2_resized.png"></div>
+	<div id="shotclock" style="color:red" style="text-align:center">
+	Shot Clock
+	<div id="timer">
+		
+	<h2>Time Left</h2>
+		<div class="timer animatable">
+			<svg>
+			<circle cx="50%" cy="50%" r="90"/>
+			<circle cx="50%" cy="50%" r="90" pathLength="1" />
+			<text x="100" y="100" text-anchor="middle"><tspan id="timeLeft"></tspan></text>
+			<text x="100" y="120" text-anchor="middle">seconds</text>
+			</svg>
+		</div>
+		</div>
+	</div>
+	<div id="gameclock" style="color:red" style="text-align:center">Game Clock</div>
+	
+	
 </body>
+<script>
+let timeLeft = 45;
+let timer = document.getElementById('timeLeft');
+
+function isTimeLeft() {
+  return timeLeft > -1;
+}
+
+function runTimer(timerElement) {
+	const timerCircle = timerElement.querySelector('svg > circle + circle');
+	timerElement.classList.add('animatable');
+	timerCircle.style.strokeDashoffset = 1;
+    
+	let countdownTimer = setInterval(function(){
+		if(isTimeLeft()){
+			const timeRemaining = timeLeft--;
+			const normalizedTime = (45 - timeRemaining) / 45;
+      // for clockwise animation
+      // const normalizedTime = (timeRemaining - 60) / 60;
+			timerCircle.style.strokeDashoffset = normalizedTime;
+      timer.innerHTML = timeRemaining;
+		} else {
+			clearInterval(countdownTimer);
+			timerElement.classList.remove('animatable');
+		}  
+	}, 1000);
+}
+
+runTimer(document.querySelector('.timer'));
+</script>
 </html>
