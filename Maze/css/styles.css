@@ -9,3 +9,73 @@ body{
     margin:auto;
     border:white 1px solid;
 }
+#shotclock{
+	position:absolute;
+	top:35%;
+	padding-left:200px;
+	height:200px;
+	width:200px;
+	border:black 2px solid;
+	background-color:grey;
+}
+
+#gameclock{
+	position:absolute;
+	top:35%;
+	right:10px;
+	height:200px;
+	width:410px;
+	border:black 2px solid;
+	background-color:grey;
+}
+
+#timer{
+  font-family: system-ui;
+  text-align: center;
+  color:white;
+}
+
+.timer {
+    margin-top: 10px;
+	color:white;
+	color:white;
+}
+  
+.timer > svg {
+    width: 200px;
+	color:white;
+    height: 200px;
+}
+
+.timer > svg > circle {
+    fill: none;
+    stroke-opacity: 0.3;
+    stroke: red;
+    stroke-width: 10;
+    transform-origin: center center;
+    transform: rotate(-90deg);
+	color:white;
+}
+
+.timer > svg > circle + circle {
+    stroke-dasharray: 1;
+    stroke-dashoffset: 1;
+    stroke-linecap: round;
+    stroke-opacity: 1;
+	color:white;
+}
+
+.timer.animatable > svg > circle + circle {
+    transition: stroke-dashoffset 0.3s ease;
+	color:white;
+}
+
+.timer > svg > text {
+    font-size: 2rem;
+	color:white;
+}
+
+.timer > svg > text + text {
+    font-size: 1rem;
+	color:white;
+}
