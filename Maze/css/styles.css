@@ -1,0 +1,11 @@
+body{
+    background-color: rgb(235, 192, 135);
+	text-align:center;
+}
+
+#playarea{
+    width:fit-content;
+    height:fit-content;
+    margin:auto;
+    border:white 1px solid;
+}

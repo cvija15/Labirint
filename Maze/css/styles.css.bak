@@ -1,0 +1,16 @@
+body{
+    background-color: rgb(235, 192, 135);
+	text-align:center;
+}
+
+hoop{
+	height:10px;
+	width:auto;
+}
+
+#playarea{
+    width:fit-content;
+    height:fit-content;
+    margin:auto;
+    border:white 1px solid;
+}
