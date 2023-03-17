@@ -1701,10 +1701,10 @@ ctx.stroke();*/
 
 
 //velikost playerja
-var playerWidth = 10;
-var playerHeight = 10;
+var playerWidth = 8;
+var playerHeight = 8;
 ////pozicija
-var x = 154;
+var x = 149;
 var y = 10;
 //player
 var player = new Image();
@@ -1716,20 +1716,21 @@ player.width = "20px";
 function move() {
     ctx.drawImage(player, x - playerWidth, y - playerHeight, playerWidth, playerHeight);
 }
+
 move()
 document.addEventListener("keydown", function (event) {
     switch (event.keyCode) {
         case 37: // left arrow
-            x -= 5;
+            x -= 8;
             break;
         case 38: // up arrow
-            y -= 5;
+            y -= 8;
             break;
         case 39: // right arrow
-            x += 5;
+            x += 8;
             break;
         case 40: // down arrow
-            y += 5;
+            y += 8;
             break;
     }
     //the left limit and below limit
