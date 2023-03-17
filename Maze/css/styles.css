@@ -12,9 +12,9 @@ body{
 #shotclock{
 	position:absolute;
 	top:35%;
-	padding-left:200px;
-	height:200px;
-	width:200px;
+	padding-left:10px;
+	height:300px;
+	width:410px;
 	border:black 2px solid;
 	background-color:grey;
 }
@@ -23,10 +23,18 @@ body{
 	position:absolute;
 	top:35%;
 	right:10px;
-	height:200px;
+	height:300px;
 	width:410px;
 	border:black 2px solid;
-	background-color:grey;
+	background-color:black;
+}
+
+#instruction{
+	position:absolute;
+	top:10%;
+	padding-left:250px;
+	height:50px;
+	width:160px;
 }
 
 #timer{
