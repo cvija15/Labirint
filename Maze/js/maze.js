@@ -11,7 +11,7 @@ ctx.save();
 ctx.restore();
 ctx.save();
 ctx.fillStyle="rgba(0,0,0,0)";
-ctx.strokeStyle="#000000";
+ctx.strokeStyle="black";
 ctx.lineWidth=2;
 ctx.lineCap="square";
 ctx.font="   15px ''";
