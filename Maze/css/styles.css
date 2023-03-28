@@ -1,13 +1,22 @@
 body{
     background-color: rgb(235, 192, 135);
 	text-align:center;
+	overflow-x:hidden;
+	overflow-x:hidden;
+	background-image:fixed;
+}
+
+#basket{
+	position:absolute;
+	width:150px;
+	height:150px;
+	left:754px;
 }
 
 #playarea{
     width:fit-content;
     height:fit-content;
     margin:auto;
-    border:white 1px solid;
 }
 #shotclock{
 	position:absolute;
@@ -30,6 +39,7 @@ body{
 }
 
 #instruction{
+	color:rgb(243, 127, 95);
 	position:absolute;
 	top:10%;
 	padding-left:250px;
@@ -45,24 +55,24 @@ body{
 
 .timer {
     margin-top: 10px;
-	color:white;
+	color:rgb(243, 127, 95);
 	color:white;
 }
   
 .timer > svg {
     width: 200px;
-	color:white;
+	color:rgb(243, 127, 95);
     height: 200px;
 }
 
 .timer > svg > circle {
     fill: none;
     stroke-opacity: 0.3;
-    stroke: red;
+    stroke: rgb(243, 127, 95);
     stroke-width: 10;
     transform-origin: center center;
     transform: rotate(-90deg);
-	color:white;
+	color:rgb(243, 127, 95);
 }
 
 .timer > svg > circle + circle {
@@ -85,5 +95,5 @@ body{
 
 .timer > svg > text + text {
     font-size: 1rem;
-	color:white;
+	color:rgb(243, 127, 95);
 }
