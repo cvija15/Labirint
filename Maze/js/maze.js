@@ -11,7 +11,7 @@ ctx.save();
 ctx.restore();
 ctx.save();
 ctx.fillStyle="rgba(0,0,0,0)";
-ctx.strokeStyle="black";
+ctx.strokeStyle="rgb(243, 127, 95)";
 ctx.lineWidth=2;
 ctx.lineCap="square";
 ctx.font="   15px ''";
@@ -1701,10 +1701,10 @@ ctx.stroke();*/
 
 
 //velikost playerja
-var playerWidth = 8;
-var playerHeight = 8;
+var playerWidth = 5;
+var playerHeight = 5;
 ////pozicija
-var x = 149;
+var x = 152;
 var y = 10;
 //player
 var player = new Image();
